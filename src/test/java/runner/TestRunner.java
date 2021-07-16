@@ -5,10 +5,20 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(features = "feature", glue = "stepDefinition", monochrome = true, plugin = { "html:cucumber-report/",
-		"rerun:rerun/failed_scenario.txt" }, tags = {  })
 
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features="feature",
+		glue="stepDefinition",
+		monochrome=true,
+		dryRun = false,
+		plugin= {
+				"pretty",
+				 "html:target/cucumber-reports/cucumber-html",
+	             "json:target/cucumber-reports/cucumber.json"
+		})
 public class TestRunner {
+	
 
 }
