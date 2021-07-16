@@ -168,44 +168,43 @@ formatter.match({
   "location": "LoginTest.i_open_the_browser()"
 });
 formatter.result({
-  "duration": 1710411200,
+  "duration": 1651483000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_visit_the_application()"
 });
 formatter.result({
-  "duration": 457944500,
+  "duration": 805754100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_enter_valid_username()"
 });
 formatter.result({
-  "duration": 73014600,
+  "duration": 76058400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_enter_valid_password()"
 });
 formatter.result({
-  "duration": 58481100,
+  "duration": 70399700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 846335600,
+  "duration": 762008200,
   "status": "passed"
 });
 formatter.match({
   "location": "AccountsTest.I_create_and_save_the_Account(DataTable)"
 });
 formatter.result({
-  "duration": 6133887900,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#acc2\"}\n  (Session info: chrome\u003d91.0.4472.124)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-9MI9ISI\u0027, ip: \u002710.0.0.137\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\amaar\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59050}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 597e9db7dac3076b3028b639543ce3d6\n*** Element info: {Using\u003did, value\u003dacc2}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepDefinition.AccountsTest.I_create_and_save_the_Account(AccountsTest.java:38)\r\n\tat ✽.And I create and save the Account(Accounts.feature:10)\r\n",
-  "status": "failed"
+  "duration": 4103682900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -217,7 +216,8 @@ formatter.match({
   "location": "AccountsTest.I_click_the_button(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 201575700,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -229,7 +229,8 @@ formatter.match({
   "location": "AccountsTest.I_should_see_the_following_values_for_the_field(String,DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 72263900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -241,13 +242,15 @@ formatter.match({
   "location": "AccountsTest.I_should_see_the_following_values_for_the_field(String,DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 94226800,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 703281300,
+  "status": "passed"
 });
 formatter.uri("login.feature");
 formatter.feature({
@@ -304,49 +307,49 @@ formatter.match({
   "location": "LoginTest.i_open_the_browser()"
 });
 formatter.result({
-  "duration": 1012299200,
+  "duration": 1029017600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_visit_the_application()"
 });
 formatter.result({
-  "duration": 486806800,
+  "duration": 737671800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_enter_valid_username()"
 });
 formatter.result({
-  "duration": 69952400,
+  "duration": 73613200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_enter_valid_password()"
 });
 formatter.result({
-  "duration": 62538500,
+  "duration": 75760900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 735995100,
+  "duration": 838855600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_should_see_the_dashboard()"
 });
 formatter.result({
-  "duration": 660310800,
+  "duration": 1151660500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_quit_the_browser()"
 });
 formatter.result({
-  "duration": 685723400,
+  "duration": 689441100,
   "status": "passed"
 });
 formatter.scenario({
@@ -396,49 +399,49 @@ formatter.match({
   "location": "LoginTest.i_open_the_browser()"
 });
 formatter.result({
-  "duration": 1091115100,
+  "duration": 1076701400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_visit_the_application()"
 });
 formatter.result({
-  "duration": 472811400,
+  "duration": 567280300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_enter_valid_username()"
 });
 formatter.result({
-  "duration": 68574300,
+  "duration": 126212800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_enter_valid_password()"
 });
 formatter.result({
-  "duration": 62644700,
+  "duration": 313971300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 783043100,
+  "duration": 974032200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_should_see_the_dashboard()"
 });
 formatter.result({
-  "duration": 622989100,
+  "duration": 758596800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_quit_the_browser()"
 });
 formatter.result({
-  "duration": 672353600,
+  "duration": 722553900,
   "status": "passed"
 });
 });
