@@ -1,214 +1,262 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Accounts.feature");
 formatter.feature({
   "line": 1,
-  "name": "As a user I should be able to create accounts",
+  "name": "As a user , I should be able to verify and create accounts",
   "description": "",
-  "id": "as-a-user-i-should-be-able-to-create-accounts",
+  "id": "as-a-user-,-i-should-be-able-to-verify-and-create-accounts",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Create and save an account",
-  "description": "",
-  "id": "as-a-user-i-should-be-able-to-create-accounts;create-and-save-an-account",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
   "line": 4,
-  "name": "I open my browser",
-  "keyword": "Given "
+  "name": "Create Account using Data Table",
+  "description": "",
+  "id": "as-a-user-,-i-should-be-able-to-verify-and-create-accounts;create-account-using-data-table",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@regression"
+    },
+    {
+      "line": 3,
+      "name": "@sprint1"
+    },
+    {
+      "line": 3,
+      "name": "@smoketest"
+    },
+    {
+      "line": 3,
+      "name": "@accounts"
+    }
+  ]
 });
 formatter.step({
   "line": 5,
-  "name": "I visit my application",
-  "keyword": "And "
+  "name": "I open the browser",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "I enter \"test.user@gmail.com.test\" as username",
+  "name": "I visit the application",
   "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "I enter \"Welcome2\" as password",
+  "name": "I enter valid username",
   "keyword": "And "
 });
 formatter.step({
   "line": 8,
+  "name": "I enter valid password",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
   "name": "I click the login button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "I should see the dashboard page",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 10,
-  "name": "I click the \"Accounts\" tab",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "I click the \"New\" button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "I enter \"Muhammad\" in the account name field",
+  "name": "I create and save the Account",
+  "rows": [
+    {
+      "cells": [
+        "Account Name",
+        "Account Number",
+        "Account Site",
+        "Active",
+        "Annual Revenue",
+        "Account Source"
+      ],
+      "line": 11
+    },
+    {
+      "cells": [
+        "Waqas 123",
+        "12345",
+        "www.codegator.us",
+        "Yes",
+        "100000",
+        "Web"
+      ],
+      "line": 12
+    }
+  ],
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "I select \"Yes\" for the \"Active\" dropdown field",
+  "name": "I click the \"Edit\" button",
   "keyword": "And "
 });
 formatter.step({
   "line": 14,
-  "name": "I click the \"Save\" button",
+  "name": "I should see the following values for the \"00N2E00000D7LOy\" field",
+  "rows": [
+    {
+      "cells": [
+        "--None--"
+      ],
+      "line": 15
+    },
+    {
+      "cells": [
+        "No"
+      ],
+      "line": 16
+    },
+    {
+      "cells": [
+        "Yes"
+      ],
+      "line": 17
+    }
+  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
-  "name": "I close the browser",
+  "line": 18,
+  "name": "I should see the following values for the \"AccountSource\" field",
+  "rows": [
+    {
+      "cells": [
+        "--None--"
+      ],
+      "line": 19
+    },
+    {
+      "cells": [
+        "Web"
+      ],
+      "line": 20
+    },
+    {
+      "cells": [
+        "Phone Inquiry"
+      ],
+      "line": 21
+    },
+    {
+      "cells": [
+        "Partner Referral"
+      ],
+      "line": 22
+    },
+    {
+      "cells": [
+        "Purchased List"
+      ],
+      "line": 23
+    },
+    {
+      "cells": [
+        "Other"
+      ],
+      "line": 24
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "I quit the browser",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AccountsTest.i_open_my_browser()"
+  "location": "LoginTest.i_open_the_browser()"
 });
 formatter.result({
-  "duration": 1678169800,
+  "duration": 1684938000,
   "status": "passed"
 });
 formatter.match({
-  "location": "AccountsTest.i_visit_my_application()"
+  "location": "LoginTest.i_visit_the_application()"
 });
 formatter.result({
-  "duration": 338015200,
+  "duration": 505037700,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "test.user@gmail.com.test",
-      "offset": 9
-    }
-  ],
-  "location": "LoginTest.i_enter_as_username(String)"
+  "location": "LoginTest.i_enter_valid_username()"
 });
 formatter.result({
-  "duration": 73602600,
+  "duration": 90548600,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Welcome2",
-      "offset": 9
-    }
-  ],
-  "location": "LoginTest.i_enter_as_password(String)"
+  "location": "LoginTest.i_enter_valid_password()"
 });
 formatter.result({
-  "duration": 63536500,
+  "duration": 76539300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 996489000,
+  "duration": 105881900,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginTest.i_should_see_the_dashboard_page()"
+  "location": "AccountsTest.I_create_and_save_the_Account(DataTable)"
 });
 formatter.result({
-  "duration": 841203700,
+  "duration": 4136931900,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Accounts",
+      "val": "Edit",
       "offset": 13
     }
   ],
-  "location": "AccountsTest.i_click_the_tab(String)"
+  "location": "AccountsTest.I_click_the_button(String)"
 });
 formatter.result({
-  "duration": 173433300,
+  "duration": 222172900,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "New",
-      "offset": 13
+      "val": "00N2E00000D7LOy",
+      "offset": 43
     }
   ],
-  "location": "AccountsTest.i_click_the_button(String)"
+  "location": "AccountsTest.I_should_see_the_following_values_for_the_field(String,DataTable)"
 });
 formatter.result({
-  "duration": 423665000,
+  "duration": 78811400,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Muhammad",
-      "offset": 9
+      "val": "AccountSource",
+      "offset": 43
     }
   ],
-  "location": "AccountsTest.i_enter_in_the_account_name_field(String)"
+  "location": "AccountsTest.I_should_see_the_following_values_for_the_field(String,DataTable)"
 });
 formatter.result({
-  "duration": 54566400,
+  "duration": 94957000,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Yes",
-      "offset": 10
-    },
-    {
-      "val": "Active",
-      "offset": 24
-    }
-  ],
-  "location": "AccountsTest.i_select_for_the_dropdown_field(String,String)"
+  "location": "LoginTest.i_quit_the_browser()"
 });
 formatter.result({
-  "duration": 126374700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Save",
-      "offset": 13
-    }
-  ],
-  "location": "AccountsTest.i_click_the_button(String)"
-});
-formatter.result({
-  "duration": 1196330900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginTest.i_close_the_browser()"
-});
-formatter.result({
-  "duration": 697732400,
+  "duration": 704397900,
   "status": "passed"
 });
 formatter.uri("login.feature");
 formatter.feature({
   "line": 1,
   "name": "Test the login functionality",
-  "description": "As an authenticated user I should be able  to login to the appplication",
+  "description": "As an authenticated user I should be able to login to the application",
   "id": "test-the-login-functionality",
   "keyword": "Feature"
 });
@@ -232,12 +280,12 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "I enter \"test.user@gmail.com.test\" as username",
+  "name": "I enter valid username",
   "keyword": "And "
 });
 formatter.step({
   "line": 8,
-  "name": "I enter \"Welcome2\" as password",
+  "name": "I enter valid password",
   "keyword": "And "
 });
 formatter.step({
@@ -247,80 +295,68 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "I should see the dashboard page",
+  "name": "I should see the dashboard",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "I close the browser",
+  "name": "I quit the browser",
   "keyword": "And "
 });
 formatter.match({
   "location": "LoginTest.i_open_the_browser()"
 });
 formatter.result({
-  "duration": 1100124500,
+  "duration": 1095105300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_visit_the_application()"
 });
 formatter.result({
-  "duration": 288388900,
+  "duration": 1347974600,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "test.user@gmail.com.test",
-      "offset": 9
-    }
-  ],
-  "location": "LoginTest.i_enter_as_username(String)"
+  "location": "LoginTest.i_enter_valid_username()"
 });
 formatter.result({
-  "duration": 66431900,
+  "duration": 52179300,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Welcome2",
-      "offset": 9
-    }
-  ],
-  "location": "LoginTest.i_enter_as_password(String)"
+  "location": "LoginTest.i_enter_valid_password()"
 });
 formatter.result({
-  "duration": 63420300,
+  "duration": 63811600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 745781200,
+  "duration": 800200400,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginTest.i_should_see_the_dashboard_page()"
+  "location": "LoginTest.i_should_see_the_dashboard()"
 });
 formatter.result({
-  "duration": 1276211400,
+  "duration": 701448900,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginTest.i_close_the_browser()"
+  "location": "LoginTest.i_quit_the_browser()"
 });
 formatter.result({
-  "duration": 684715200,
+  "duration": 655809600,
   "status": "passed"
 });
 formatter.scenario({
   "line": 13,
-  "name": "Using in-valid credentials I should not be able to log in",
+  "name": "Using valid credentials I should be able to login2",
   "description": "",
-  "id": "test-the-login-functionality;using-in-valid-credentials-i-should-not-be-able-to-log-in",
+  "id": "test-the-login-functionality;using-valid-credentials-i-should-be-able-to-login2",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -336,12 +372,12 @@ formatter.step({
 });
 formatter.step({
   "line": 16,
-  "name": "I enter \"test.user222@gmail.com.test\" as username",
+  "name": "I enter valid username",
   "keyword": "And "
 });
 formatter.step({
   "line": 17,
-  "name": "I enter \"Welcome222\" as password",
+  "name": "I enter valid password",
   "keyword": "And "
 });
 formatter.step({
@@ -351,73 +387,61 @@ formatter.step({
 });
 formatter.step({
   "line": 19,
-  "name": "I should see and error message",
+  "name": "I should see the dashboard",
   "keyword": "Then "
 });
 formatter.step({
   "line": 20,
-  "name": "I close the browser",
+  "name": "I quit the browser",
   "keyword": "And "
 });
 formatter.match({
   "location": "LoginTest.i_open_the_browser()"
 });
 formatter.result({
-  "duration": 1063499800,
+  "duration": 1095717300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_visit_the_application()"
 });
 formatter.result({
-  "duration": 288879200,
+  "duration": 1117912400,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "test.user222@gmail.com.test",
-      "offset": 9
-    }
-  ],
-  "location": "LoginTest.i_enter_as_username(String)"
+  "location": "LoginTest.i_enter_valid_username()"
 });
 formatter.result({
-  "duration": 67971600,
+  "duration": 76139400,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Welcome222",
-      "offset": 9
-    }
-  ],
-  "location": "LoginTest.i_enter_as_password(String)"
+  "location": "LoginTest.i_enter_valid_password()"
 });
 formatter.result({
-  "duration": 81784300,
+  "duration": 63141800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.i_click_the_login_button()"
 });
 formatter.result({
-  "duration": 7214743400,
+  "duration": 807183100,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginTest.i_should_see_and_error_message()"
+  "location": "LoginTest.i_should_see_the_dashboard()"
 });
 formatter.result({
-  "duration": 117915900,
+  "duration": 819306500,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginTest.i_close_the_browser()"
+  "location": "LoginTest.i_quit_the_browser()"
 });
 formatter.result({
-  "duration": 717022600,
+  "duration": 694285500,
   "status": "passed"
 });
 });

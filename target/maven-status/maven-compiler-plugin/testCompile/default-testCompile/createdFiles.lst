@@ -1,7 +1,5 @@
-runner\SmokeRunner.class
-stepDefinition\AccountsTest.class
 runner\RegressionRunner.class
 Utilities\BaseClass.class
-runner\FailedRunner.class
+stepDefinition\AccountsTest.class
 runner\TestRunner.class
 stepDefinition\LoginTest.class

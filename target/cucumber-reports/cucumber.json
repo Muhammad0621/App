@@ -1,0 +1,212 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Create Account using Data Table",
+        "description": "",
+        "id": "as-a-user-,-i-should-be-able-to-verify-and-create-accounts;create-account-using-data-table",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I open the browser",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I visit the application",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "I enter valid username",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I enter valid password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I click the login button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I create and save the Account",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Account Name",
+                  "Account Number",
+                  "Account Site",
+                  "Active",
+                  "Annual Revenue",
+                  "Account Source"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Muhammad",
+                  "12345",
+                  "www.codegator.us",
+                  "Yes",
+                  "100000",
+                  "Web"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I click the \"Edit\" button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I should see the following values for the \"00N2E00000D7LOy\" field",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "--None--"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "No"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Yes"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "I should see the following values for the \"AccountSource\" field",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "--None--"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "Web"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "Phone Inquiry"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "Partner Referral"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "Purchased List"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "Other"
+                ],
+                "line": 24
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I quit the browser",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@regression"
+          },
+          {
+            "line": 3,
+            "name": "@sprint1"
+          },
+          {
+            "line": 3,
+            "name": "@smoketest"
+          },
+          {
+            "line": 3,
+            "name": "@accounts"
+          }
+        ]
+      }
+    ],
+    "name": "As a user , I should be able to verify and create accounts",
+    "description": "",
+    "id": "as-a-user-,-i-should-be-able-to-verify-and-create-accounts",
+    "keyword": "Feature",
+    "uri": "Accounts.feature"
+  }
+]

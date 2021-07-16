@@ -1,15 +1,25 @@
-Feature: As a user I should be able to create accounts
+Feature: As a user , I should be able to verify and create accounts
 
-  Scenario: Create and save an account
-    Given I open my browser
-    And I visit my application
-    And I enter "test.user@gmail.com.test" as username
-    And I enter "Welcome2" as password
+  @regression @sprint1 @smoketest @accounts
+  Scenario: Create Account using Data Table
+    Given I open the browser
+    And I visit the application
+    And I enter valid username
+    And I enter valid password
     When I click the login button
-    Then I should see the dashboard page
-    And I click the "Accounts" tab
-    And I click the "New" button
-    And I enter "Muhammad" in the account name field
-    And I select "Yes" for the "Active" dropdown field
-    And I click the "Save" button
-    And I close the browser
+    And I create and save the Account
+      | Account Name | Account Number | Account Site     | Active | Annual Revenue | Account Source |
+      | Muhammad     |          12345 | www.codegator.us | Yes    |         100000 | Web            |
+    And I click the "Edit" button
+    And I should see the following values for the "00N2E00000D7LOy" field
+      | --None-- |
+      | No       |
+      | Yes      |
+    And I should see the following values for the "AccountSource" field
+      | --None--         |
+      | Web              |
+      | Phone Inquiry    |
+      | Partner Referral |
+      | Purchased List   |
+      | Other            |
+    And I quit the browser

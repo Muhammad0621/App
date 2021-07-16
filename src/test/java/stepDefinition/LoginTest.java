@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import Utilities.BaseClass;
 import cucumber.api.java.en.Given;
@@ -22,50 +24,34 @@ public class LoginTest extends BaseClass {
 
 	}
 
-	@Given("^I visit the application$")
+	@Given("^I visit the application$") // ken is working on this
 	public void i_visit_the_application() {
 		driver.get("https://login.salesforce.com");
-		
-
 	}
 
-	@Given("^I enter \"([^\"]*)\" as username$")
-	public void i_enter_as_username(String username) {
-		driver.findElement(By.id("username")).sendKeys(username);
-
+	@Given("^I enter valid username$")
+	public void i_enter_valid_username() {
+		driver.findElement(By.id("username")).sendKeys("test.user@gmail.com.test");
 	}
 
-	@Given("^I enter \"([^\"]*)\" as password$")
-	public void i_enter_as_password(String password) {
-driver.findElement(By.id("password")).sendKeys(password);
+	@Given("^I enter valid password$")
+	public void i_enter_valid_password() {
+		driver.findElement(By.id("password")).sendKeys("Welcome2");
 	}
 
 	@When("^I click the login button$")
 	public void i_click_the_login_button() {
-		System.out.println("I click the login button");
 		driver.findElement(By.id("Login")).click();
-
 	}
 
-	@Then("^I should see the dashboard page$")
-	public void i_should_see_the_dashboard_page() {
+	@Then("^I should see the dashboard$")
+	public void i_should_see_the_dashboard() {
 		boolean homePage = driver.findElement(By.xpath("//a[@title='Home Tab - Selected']")).isDisplayed();
 		Assert.assertTrue(homePage);
-
 	}
 
-	@Then("^I close the browser$")
-	public void i_close_the_browser() {
+	@Then("^I quit the browser$")
+	public void i_quit_the_browser() throws Throwable {
 		driver.quit();
-
 	}
-	@Then("^I should see and error message$")
-	public void i_should_see_and_error_message() {
-		String expectedMessage = "Please check your username and password. If you still can't log in, contact your Salesforce administrator.";
-	String actualMessage = driver.findElement(By.id("error")).getText();
-	Assert.assertEquals(expectedMessage, actualMessage);
 }
-	  
-	}
-
-
