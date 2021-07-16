@@ -12,56 +12,74 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1602395700,
+              "status": "passed"
             },
             "line": 5,
             "name": "I open the browser",
-            "match": {},
+            "match": {
+              "location": "LoginTest.i_open_the_browser()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 413171600,
+              "status": "passed"
             },
             "line": 6,
             "name": "I visit the application",
-            "match": {},
+            "match": {
+              "location": "LoginTest.i_visit_the_application()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 84121100,
+              "status": "passed"
             },
             "line": 7,
             "name": "I enter valid username",
-            "match": {},
+            "match": {
+              "location": "LoginTest.i_enter_valid_username()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 80783900,
+              "status": "passed"
             },
             "line": 8,
             "name": "I enter valid password",
-            "match": {},
+            "match": {
+              "location": "LoginTest.i_enter_valid_password()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 789508400,
+              "status": "passed"
             },
             "line": 9,
             "name": "I click the login button",
-            "match": {},
+            "match": {
+              "location": "LoginTest.i_click_the_login_button()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2620761700,
+              "status": "passed"
             },
             "line": 10,
             "name": "I create and save the Account",
-            "match": {},
+            "match": {
+              "location": "AccountsTest.I_create_and_save_the_Account(DataTable)"
+            },
             "rows": [
               {
                 "cells": [
@@ -90,20 +108,38 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 227327200,
+              "status": "passed"
             },
             "line": 13,
             "name": "I click the \"Edit\" button",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "Edit",
+                  "offset": 13
+                }
+              ],
+              "location": "AccountsTest.I_click_the_button(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 74320400,
+              "status": "passed"
             },
             "line": 14,
             "name": "I should see the following values for the \"00N2E00000D7LOy\" field",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "00N2E00000D7LOy",
+                  "offset": 43
+                }
+              ],
+              "location": "AccountsTest.I_should_see_the_following_values_for_the_field(String,DataTable)"
+            },
             "rows": [
               {
                 "cells": [
@@ -128,11 +164,20 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 98147300,
+              "status": "passed"
             },
             "line": 18,
             "name": "I should see the following values for the \"AccountSource\" field",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "AccountSource",
+                  "offset": 43
+                }
+              ],
+              "location": "AccountsTest.I_should_see_the_following_values_for_the_field(String,DataTable)"
+            },
             "rows": [
               {
                 "cells": [
@@ -175,11 +220,14 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 692205100,
+              "status": "passed"
             },
             "line": 25,
             "name": "I quit the browser",
-            "match": {},
+            "match": {
+              "location": "LoginTest.i_quit_the_browser()"
+            },
             "keyword": "And "
           }
         ],

@@ -24,7 +24,7 @@ public class LoginTest extends BaseClass {
 
 	}
 
-	@Given("^I visit the application$") // ken is working on this
+	@Given("^I visit the application$") 
 	public void i_visit_the_application() {
 		driver.get("https://login.salesforce.com");
 	}

@@ -164,44 +164,92 @@ formatter.step({
   "name": "I quit the browser",
   "keyword": "And "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "LoginTest.i_open_the_browser()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 1602395700,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "LoginTest.i_visit_the_application()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 413171600,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "LoginTest.i_enter_valid_username()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 84121100,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "LoginTest.i_enter_valid_password()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 80783900,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "LoginTest.i_click_the_login_button()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 789508400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AccountsTest.I_create_and_save_the_Account(DataTable)"
+});
+formatter.result({
+  "duration": 2620761700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Edit",
+      "offset": 13
+    }
+  ],
+  "location": "AccountsTest.I_click_the_button(String)"
+});
+formatter.result({
+  "duration": 227327200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "00N2E00000D7LOy",
+      "offset": 43
+    }
+  ],
+  "location": "AccountsTest.I_should_see_the_following_values_for_the_field(String,DataTable)"
+});
+formatter.result({
+  "duration": 74320400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "AccountSource",
+      "offset": 43
+    }
+  ],
+  "location": "AccountsTest.I_should_see_the_following_values_for_the_field(String,DataTable)"
+});
+formatter.result({
+  "duration": 98147300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginTest.i_quit_the_browser()"
+});
+formatter.result({
+  "duration": 692205100,
+  "status": "passed"
 });
 });

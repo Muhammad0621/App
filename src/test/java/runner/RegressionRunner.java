@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="feature",
-		glue="step",
+		glue="stepDefinition",
 		monochrome=true,
 		dryRun = false,
 		plugin= {
